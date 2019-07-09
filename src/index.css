@@ -1,39 +1,60 @@
-.topMargin{
-  margin-top: 8px;
-}
-/* .navItem{
-  margin-left: 30px;
-} */
-/* .center {
+
+
+.center {
   width:30%;
   margin-left: 35%;
-} */
+}
 
 .navClick{
   color: white;
 }
 
-.navClick:hover{
-  text-decoration: underline;
-  font-weight: bold;
+#nav{
+  height: 4em;
 }
+
+#navbar{
+  margin-bottom: 49px;
+ 
+}
+
+.banner {
+  background-color: white !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  vertical-align: auto;
+  border-radius: 0;
+  margin: 0 !important;
+  padding: 20px !important;
+  
+}
+
 
 .navItem:hover{
-  background-color: white;
+  border: 1px solid;
+  border-color: white;
+  border-width: thin;
 }
-
-
 
 .navItem{
+  margin-right: 5px;
+  border: 1px solid transparent;
+}
+
+
+
+
+/* .navItem{
   margin-top: 0px;
   padding-right: 5px;
-}
+} */
 
 
 
-.center{
-  text-align: center;
-}
+
 
 
 /* ul {
@@ -64,7 +85,7 @@ li a {
   
 } */
 
-#nav ul {
+/* #nav ul {
   list-style: none;
   background-color: black;
   text-align: center;
@@ -97,9 +118,9 @@ li a {
 
 
 /* Change the link color to #111 (black) on hover */
-li:hover {
+/* li:hover {
   background-color:white;
-}
+}  */
 
 
 

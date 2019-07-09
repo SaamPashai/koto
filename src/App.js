@@ -10,6 +10,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Jumbotron
 } from 'reactstrap';
 import './App.css';
 import { Homepage } from './Homepage';
@@ -21,6 +22,9 @@ export default class App extends Component {
       <div>
         <Router>
           <React.Fragment>
+            <Jumbotron className="banner">
+              <h1>KOTOBRA</h1>
+            </Jumbotron>
             <Navigation />
             <Route exact path="/" component={Homepage} />
             <Route path="/Test" component={Test} />
@@ -48,26 +52,31 @@ class Navigation extends Component {
   }
   render() {
     return (
-      <div id="nav">
-        <ul>
-          <li className="drc"><Link className="a" to="/">Homepage</Link></li>
-          <li><Link className="a" to="/Test">Testpage</Link></li>
-          <li><Link className="a" to="/Test">Testpage</Link></li>
-          <li><Link className="a" to="/Test">Testpage</Link></li>
-        </ul>
+      <div id="navbar">
+        <Navbar className="navbar navbar-expand-md navbar-dark bg-dark">
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="center" navbar>
+              <NavItem className="navItem">
+                <NavLink tag={Link} to="/"><span className="navClick">Homepage</span></NavLink>
+              </NavItem>
+              <NavItem className="navItem">
+                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+              </NavItem>
+              <NavItem className="navItem">
+                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+              </NavItem>
+              <NavItem className="navItem">
+                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+              </NavItem>
+              <NavItem className="navItem">
+                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
       </div>
-      
 
-      // <Navbar className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      //     <NavbarToggler onClick={this.toggle} />
-      //     <Collapse isOpen={this.state.isOpen} navbar>
-      //       <Nav className="center" navbar>
-      //         <NavItem className="navItem">
-      //           <NavLink tag={Link} to="/"><span className="navClick">Homepage</span></NavLink>
-      //         </NavItem>
-      //       </Nav>
-      //     </Collapse>
-      //   </Navbar>
     )
   }
 }
