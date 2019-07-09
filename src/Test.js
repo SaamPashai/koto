@@ -1,32 +1,32 @@
 import React, { Component } from 'react';
 
-class Homepage extends Component {
+class Test extends Component {
     render() {
         return (
             <div>
                 <main>
-                    <Header />
+                    <Tesder />
                 </main>
             </div>
         );
     }
 }
 
-export class Header extends Component {
+export class Tesder extends Component {
     render() {
         return (
             <div className="header">
                 <h2 className="topMargin">Welcome</h2>
                 <p>
-                    Hi.
+                    testing.
                 </p>
  
                 <p>
-                    Test.
+                    peas.
                 </p>
             </div>
         )
     }
 }
 
-export { Homepage };
+export { Test };
