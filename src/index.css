@@ -1,8 +1,6 @@
-
-
 .center {
-  width:30%;
-  margin-left: 35%;
+  /* width:30%; */
+  margin-left: 10%;
 }
 
 .navClick{
@@ -13,10 +11,10 @@
   height: 4em;
 }
 
-#navbar{
+/* #navbar{
   margin-bottom: 49px;
  
-}
+} */
 
 .banner {
   background-color: white !important;
@@ -45,7 +43,9 @@
 }
 
 
-
+.carousel{
+  size: 50%;
+}
 
 /* .navItem{
   margin-top: 0px;
@@ -64,11 +64,9 @@
   overflow: hidden;
   background-color: #333;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
@@ -92,11 +90,9 @@ li a {
   padding: 0;
   margin: 0;
 }
-
 #nav li{
   display: inline-block;
 }
-
 #nav .a{
   text-decoration: none;
   color: white;
@@ -107,23 +103,13 @@ li a {
   font-family: Helvetica;
   transition: 0.4s;
 }
-
 #nav .a:hover{
   color:black;
 }
-
 .drc{
   padding-right:10px;
 }
-
-
 /* Change the link color to #111 (black) on hover */
 /* li:hover {
   background-color:white;
 }  */
-
-
-
-
-
-
