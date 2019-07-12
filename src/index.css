@@ -1,6 +1,6 @@
 .center {
   /* width:30%; */
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .navClick{
@@ -15,6 +15,10 @@
   margin-bottom: 49px;
  
 } */
+
+div{
+  font-family: Avenir Medium,sans-serif;
+}
 
 .banner {
   background-color: white !important;
@@ -42,10 +46,65 @@
   border: 1px solid transparent;
 }
 
+.casualSection{
+  margin-top: 65px;
+  /* background-color: #ffc99d; */
+}
+
+#casual1{
+  height: auto;
+  max-width: 100%;
+  
+}
+
+#casual2{
+  
+  height: auto;
+  max-width: 100%;
+  
+}
 
 .carousel{
   size: 50%;
 }
+
+.desc{
+  margin-top: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+.desc-down{
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-item {
+  flex: 1 1 auto;
+  flex-basis: 33%;
+}
+
+
+#startBox{
+  /* margin-left: 150px; */
+  margin-right: 25px;
+}
+
+.casual{
+  height: 25px;
+}
+
+
+
+
 
 /* .navItem{
   margin-top: 0px;

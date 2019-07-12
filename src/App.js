@@ -84,15 +84,6 @@ class Navigation extends Component {
               <NavItem className="navItem">
                 <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
               </NavItem>
-              <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
-              </NavItem>
-              <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
-              </NavItem>
-                <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
-              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
