@@ -61,28 +61,28 @@ class Navigation extends Component {
                 <NavLink tag={Link} to="/"><span className="navClick">Homepage</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">New Items</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">Clothing</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">Essentials</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">Beyond Casual</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">Swimwear</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">Footwear</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">Hair + Wigs</span></NavLink>
               </NavItem>
               <NavItem className="navItem">
-                <NavLink tag={Link} to="/Test"><span className="navClick">Testpage</span></NavLink>
+                <NavLink tag={Link} to="/Test"><span className="navClick">Vac-Wear</span></NavLink>
               </NavItem>
             </Nav>
           </Collapse>

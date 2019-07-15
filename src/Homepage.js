@@ -10,6 +10,12 @@ import c2 from './img/s5.jpeg';
 import b1 from './img/b4.jpeg';
 import b2 from './img/b5.jpeg';
 import b3 from './img/b1.jpeg';
+import col1 from './img/col1.jpg';
+import col2 from './img/col2.jpg';
+import col3 from './img/col3.jpg';
+import col4 from './img/col4.jpg';
+import col5 from './img/col5.jpg';
+
 
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 
@@ -21,6 +27,7 @@ class Homepage extends Component {
                     <Header />
                     <Casual />
                     <Business />
+                    <PictureRows />
                 </main>
             </div>
         );
@@ -110,11 +117,43 @@ export class Business extends Component {
     }
 }
 
-export class Date extends Component {
+export class PictureRows extends Component {
     render() {
         return (
-            <div>
-
+            <div className="rowsSection">
+                <h2 className="titleCent">SHOP FOR THE MOMENT</h2>
+                <div className="flex-container">
+                    <div className="flex-item" id="colBegin">
+                        <div className="dool">
+                            <img id="casual1" src={col1} alt="dress" />
+                            <p className="desc-down2">WEEKEND</p>
+                        </div>
+                    </div>
+                    <div className="flex-item" id="startBox">
+                        <div className="dool">
+                            <img id="casual2" src={col2} alt="dress" />
+                            <p className="desc-down2">CASUAL</p>
+                        </div>
+                    </div>
+                    <div className="flex-item" id="startBox">
+                        <div className="dool">
+                            <img id="casual1" src={col3} alt="dress" />
+                            <p className="desc-down2">VACATION</p>
+                        </div>
+                    </div>
+                    <div className="flex-item" id="startBox">
+                        <div className="dool">
+                            <img id="casual2" src={col4} alt="dress" />
+                            <p className="desc-down2">ACTIVITY</p>
+                        </div>
+                    </div>
+                    <div className="flex-item" id="colEnd">
+                        <div className="dool">
+                            <img id="casual2" src={col5} alt="dress" />
+                            <p className="desc-down2">HANGOUT</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }

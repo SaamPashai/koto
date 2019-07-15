@@ -82,6 +82,17 @@ div{
   text-align: center;
 }
 
+
+.desc-down2{
+  color: white;
+  font-family: Avenir Medium,sans-serif;
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 300;  
+}
+
+
 .flex-container{
   display: flex;
   flex-wrap: nowrap;
@@ -98,8 +109,39 @@ div{
   margin-right: 25px;
 }
 
+
+#colBegin{
+  
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+#colEnd{
+  margin-right: 25px;
+}
+
+
+
+.titleCent{
+  text-align: center;
+  color: white;
+  margin-bottom: 35px;
+  padding-top: 35px;
+}
+
 .casual{
   height: 25px;
+}
+
+.dool{
+  text-align: center;
+}
+
+
+.rowsSection{
+  background-color: black;
+  
 }
 
 
