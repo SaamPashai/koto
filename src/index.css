@@ -138,13 +138,28 @@ div{
   text-align: center;
 }
 
+.socHead{
+  background-color: pink;
+}
+
+.socTitleCent{
+  text-align: center;
+  color: white;
+  margin-bottom: 35px;
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 .rowsSection{
   background-color: black;
+  margin-bottom: 100px;
   
 }
 
-
+#multi{
+  padding-right: 30px;
+}
 
 
 

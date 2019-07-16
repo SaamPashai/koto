@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+
+import Slider from "react-slick";
+
+
 import dress from './img/dress.jpg';
 import jacket from './img/jacket.jpg';
 import bw from './img/bw.jpg';
@@ -17,7 +21,11 @@ import col4 from './img/col4.jpg';
 import col5 from './img/col5.jpg';
 
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+
+
+
+
+
 
 class Homepage extends Component {
     render() {
@@ -28,6 +36,7 @@ class Homepage extends Component {
                     <Casual />
                     <Business />
                     <PictureRows />
+                    <SocialMedia />
                 </main>
             </div>
         );
@@ -121,7 +130,7 @@ export class PictureRows extends Component {
     render() {
         return (
             <div className="rowsSection">
-                <h2 className="titleCent">SHOP FOR THE MOMENT</h2>
+                <h2 className="titleCent">SHOP BY OCCASSION</h2>
                 <div className="flex-container">
                     <div className="flex-item" id="colBegin">
                         <div className="dool">
@@ -159,10 +168,62 @@ export class PictureRows extends Component {
     }
 }
 
-export class Beach extends Component {
+export class SocialMedia extends Component {
     render() {
+
+        var settings = {
+            arrows: false,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            centerMode: true,
+            centerPadding: "15px",
+            autoPlay: false,
+            adaptiveHeight: true,
+            responsive: [
+                {
+                    breakpoint: 768, settings: "unslick",
+                },
+            ],
+
+        };
         return (
             <div>
+                <div className="socHead">
+                    <h2 className="socTitleCent">LOVE OUR FACEBOOK OR INSTAGRAM PAGE - UPLOAD YOUR FAV-PHOTOS</h2>
+                </div>
+                <Slider {...settings}>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                </Slider>
 
             </div>
         )
