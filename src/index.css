@@ -42,7 +42,7 @@ div{
 }
 
 .navItem{
-  margin-right: 5px;
+  /* margin-right: 5px; */
   border: 1px solid transparent;
 }
 
@@ -82,6 +82,29 @@ div{
   text-align: center;
 }
 
+#st{
+  margin-left: 50px;
+}
+
+.desc-up{
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.desc-up2{
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 
 .desc-down2{
   color: white;
@@ -103,12 +126,36 @@ div{
   flex-basis: 33%;
 }
 
+.topcorner{
+  position:absolute;
+    top:10px;
+    right: 10px;
+}
+
+#jerrywest{
+  margin: 0;
+  padding: 0;
+}
+
+.choice{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+.loginLog{
+  text-align: center;
+  margin-top: 20px;
+}
 
 #startBox{
   /* margin-left: 150px; */
   margin-right: 25px;
 }
 
+#register{
+  color: yellow;
+}
 
 #colBegin{
   
@@ -117,11 +164,35 @@ div{
 }
 
 
+#startBoxPur{
+  /* margin-left: 150px; */
+  margin-right: 5px;
+}
+
+
+#colBeginPur{
+  
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+#endBoxPur{
+  
+  margin-right: auto;
+  
+}
+
+#proTop{
+  margin-top: 50px;
+}
+
 #colEnd{
   margin-right: 25px;
 }
 
-
+.pur-desc{
+  margin-bottom: 0;
+}
 
 .titleCent{
   text-align: center;
@@ -151,6 +222,11 @@ div{
   padding-bottom: 15px;
 }
 
+#socialSection{
+  margin-bottom: 75px;
+}
+
+
 .rowsSection{
   background-color: black;
   margin-bottom: 100px;
@@ -161,7 +237,43 @@ div{
   padding-right: 30px;
 }
 
+#linkSection{
+  background-color: #F0F0F0;
+}
 
+#linkStart{
+  margin-left: 150px;
+  margin-top: 25px;
+  
+}
+
+
+#nextLink{
+  margin-top: 25px;
+  margin-right: 800px;
+}
+
+.linkText{
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+
+.linkItems{
+  font-size: 12px;
+}
+
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+}
+
+li{
+  /* -webkit-padding-start: 0; */
+  margin-bottom: 10px;
+}
 
 /* .navItem{
   margin-top: 0px;

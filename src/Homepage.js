@@ -37,6 +37,7 @@ class Homepage extends Component {
                     <Business />
                     <PictureRows />
                     <SocialMedia />
+                    
                 </main>
             </div>
         );
@@ -191,7 +192,7 @@ export class SocialMedia extends Component {
 
         };
         return (
-            <div>
+            <div id="socialSection">
                 <div className="socHead">
                     <h2 className="socTitleCent">LOVE OUR FACEBOOK OR INSTAGRAM PAGE - UPLOAD YOUR FAV-PHOTOS</h2>
                 </div>
@@ -230,11 +231,27 @@ export class SocialMedia extends Component {
     }
 }
 
-export class Special extends Component {
+export class Links extends Component {
     render() {
         return (
-            <div>
-
+            <div id="linkSection">
+                <div className="flex-container">
+                    <div className="flex-item" id="linkStart">
+                        <span className="linkText">USEFUL LINKS</span>
+                        <ul>
+                            <li className="linkItems">CATELOG</li>
+                            <li className="linkItems">GIFT CARDS</li>
+                            <li className="linkItems">COUPONS &amp; PROMOS</li>
+                        </ul>
+                    </div>
+                    <div className="flex-item" id="nextLink">
+                        <span className="linkText">ABOUT US</span>
+                        <ul>
+                            <li className="linkItems">OUR STORY</li>
+                            <li className="linkItems">CAREERS</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         )
     }
