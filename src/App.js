@@ -38,10 +38,11 @@ export default class App extends Component {
       <div>
         <Router>
           <React.Fragment>
-            <Jumbotron className="banner">
+            {/* <Jumbotron className="banner">
               <img id="jerrywest" src={koto} alt="logo" />
             </Jumbotron>
-            <Navigation />
+            <Navigation /> */}
+            <Navi />
             <Route exact path="/" component={Homepage} />
             <Route path="/Test" component={Test} />
             <Route path="/YouShop" component={You} />
@@ -124,6 +125,29 @@ class Navigation extends Component {
         </Navbar>
       </div>
 
+    )
+  }
+}
+
+
+class Navi extends Component {
+  render() {
+    return (
+      <div>
+        <nav>
+          <img id="jerrywest" src={koto} alt="logo" />
+          <ul>
+            <Link className="none" to={"/"}><li className="newNavBros"><span className="nl">Home</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">New Items</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Clothing</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Essentials</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Beyond Casual</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Swimwear</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Footwear</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Hair + Wigs</span></li></Link>
+          </ul>
+        </nav>
+      </div>
     )
   }
 }

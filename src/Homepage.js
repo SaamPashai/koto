@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 import Slider from "react-slick";
 
@@ -19,6 +20,9 @@ import col2 from './img/col2.jpg';
 import col3 from './img/col3.jpg';
 import col4 from './img/col4.jpg';
 import col5 from './img/col5.jpg';
+import sec1 from './img/koto-01.png';
+import sec2 from './img/koto-02.png';
+import sec3 from './img/koto-03.png';
 
 
 
@@ -32,12 +36,13 @@ class Homepage extends Component {
         return (
             <div>
                 <main>
+                    <ThreeCol />
                     <Header />
                     <Casual />
                     <Business />
                     <PictureRows />
                     <SocialMedia />
-                    
+
                 </main>
             </div>
         );
@@ -51,13 +56,13 @@ export class Header extends Component {
                 <Carousel showArrows={true} showStatus={false} showIndicators={false} autoPlay={true} showThumbs={false}
                     stopOnHover={false} useKeyboardArrows={true} infiniteLoop={true}>
                     <div>
-                        <img className="carousel" src={dress} alt="dress" />
+                        <img className="carousel2" src={dress} alt="dress" />
                     </div>
                     <div>
-                        <img className="carousel" src={jacket} alt="jacket" />
+                        <img className="carousel2" src={jacket} alt="jacket" />
                     </div>
                     <div>
-                        <img className="carousel" src={bw} alt="bw" />
+                        <img className="carousel2" src={bw} alt="bw" />
                     </div>
                 </Carousel>
 
@@ -65,6 +70,26 @@ export class Header extends Component {
         )
     }
 }
+
+
+export class ThreeCol extends Component {
+    render() {
+        return (
+            <div>
+                <div>
+
+                    <Link to={"/YouShop"}><img className="column-left" src={sec1} alt="dress" /></Link>
+                    <Link to={"/WeShop"}><img className="column-center" src={sec2} alt="dress" /></Link>
+                    <Link to={"/Test"}><img className="column-right" src={sec3} alt="dress" /></Link>
+                </div>
+            </div>
+        )
+    }
+
+
+}
+
+
 
 export class Casual extends Component {
     render() {

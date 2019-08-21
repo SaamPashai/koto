@@ -20,6 +20,15 @@ div{
   font-family: Avenir Medium,sans-serif;
 }
 
+.newNavBros{
+  display: inline;
+  margin-right: 10px;
+}
+
+.nl:hover{
+  text-decoration: underline; 
+}
+
 .banner {
   background-color: white !important;
   background-size: cover;
@@ -66,6 +75,10 @@ div{
 
 .carousel{
   size: 50%;
+}
+
+.carousel2{
+  max-height: 400px;
 }
 
 .desc{
@@ -126,6 +139,48 @@ div{
   flex-basis: 33%;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.column-left {
+  float: left;
+  width: 33.333%;
+}
+
+.column-right {
+  float: right;
+  width: 33.333%;
+}
+
+.column-center {
+  display: inline-block;
+  width: 33.333%;
+}
+
+.none{
+  color: black;
+}
+
+/* .flex-container2{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex-item2 {
+  flex: 0 0 auto;
+ 
+} */
+
 .topcorner{
   position:absolute;
     top:10px;
@@ -133,8 +188,15 @@ div{
 }
 
 #jerrywest{
-  margin: 0;
-  padding: 0;
+  
+  margin-right: 50px;
+  margin-left: 100px;
+  margin-bottom:50px;
+  margin-top: 25px;
+}
+
+ul{
+  display: inline;
 }
 
 .choice{
