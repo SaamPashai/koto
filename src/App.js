@@ -16,6 +16,8 @@ import {
   NavLink,
   Jumbotron
 } from 'reactstrap';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
 import { Modal } from 'react-bootstrap';
 import './App.css';
 import { Homepage } from './Homepage';
@@ -42,7 +44,9 @@ export default class App extends Component {
               <img id="jerrywest" src={koto} alt="logo" />
             </Jumbotron>
             <Navigation /> */}
+            <Banner />
             <Navi />
+            <DdownSearch />
             <Route exact path="/" component={Homepage} />
             <Route path="/Test" component={Test} />
             <Route path="/YouShop" component={You} />
@@ -56,7 +60,7 @@ export default class App extends Component {
             <Route path="/LoginPage" component={Register} />
           </React.Fragment>
           <Log />
-          {/* <FooterPage /> */}
+          <FooterPage />
         </Router>
 
       </div>
@@ -137,45 +141,107 @@ class Navi extends Component {
         <nav>
           <img id="jerrywest" src={koto} alt="logo" />
           <ul>
-            <Link className="none" to={"/"}><li className="newNavBros"><span className="nl">Home</span></li></Link>
-            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">New Items</span></li></Link>
-            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Clothing</span></li></Link>
-            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Essentials</span></li></Link>
+            <Link className="none" to={"/"}><li className="newNavBros"><span className="nl">HOME</span></li></Link>
+            <Link className="none" to={"/YouShop"}><li className="newNavBros"><span className="nl">YOU SHOP</span></li></Link>
+            <Link className="none" to={"/WeShop"}><li className="newNavBros"><span className="nl">WE SHOP</span></li></Link>
+            <Link className="none" to={"/WeShop"}><li className="newNavBros"><span className="nl">STORES</span></li></Link>
+            <Link className="none" to={"/WeShop"}><li className="newNavBros"><span className="nl">DEALS</span></li></Link>
+            {/* <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Essentials</span></li></Link>
             <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Beyond Casual</span></li></Link>
             <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Swimwear</span></li></Link>
             <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Footwear</span></li></Link>
-            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Hair + Wigs</span></li></Link>
+            <Link className="none" to={"/Test"}><li className="newNavBros"><span className="nl">Hair + Wigs</span></li></Link> */}
           </ul>
         </nav>
+        {/* <div className="column-center3">
+          <span></span>
+        </div>
+        <div>
+          <Link className="link" to={"/LoginPage"}><div className="topcorner">
+            <i className="fa fa-user" id="userIcon"></i><p className="signIn">Sign in</p>
+            <p className="myAccount">My Account</p>
+          </div></Link>
+        </div> */}
       </div>
     )
   }
 }
 
+class DdownSearch extends Component {
+  render() {
+    return (
+      <div className="underBar">
+        <div className="dropdown">
+          <button className="dropbtn">SHOP BY DEPARTMENT</button>
+          <div className="dropdown-content">
+            <a href="#">Wemon</a>
+            <a href="#">Men</a>
+            <a href="#">Kids &amp; Baby</a>
+            <a href="#">Shoes</a>
+            <a href="#">Handbags &amp; Accessories</a>
+            <a href="#">Beauty</a>
+            <a href="#">Hair &amp; Wigs</a>
+            <a href="#">Jewerly</a>
+            <a href="#">Watches</a>
+            <a href="#">Swimwear</a>
+            <a href="#">Bed &amp; Bath</a>
+            <a href="#">Juniors</a>
+          </div>
+        </div>
+
+        <div className="column-center3">
+          <span></span>
+        </div>
+        <input type="text" placeholder="Search.."></input>
+        <button className="searchBut" type="submit"><i className="fa fa-search"></i></button>
+
+
+      </div>
+    )
+  }
+}
 
 class FooterPage extends Component {
   render() {
     return (
-      <div>
-        <div id="linkSection">
-          <div className="flex-container">
-            <div className="flex-item" id="linkStart">
-              <span className="linkText">USEFUL LINKS</span>
-              <ul>
-                <li className="linkItems">CATELOG</li>
-                <li className="linkItems">GIFT CARDS</li>
-                <li className="linkItems">COUPONS &amp; PROMOS</li>
-              </ul>
-            </div>
-            <div className="flex-item" id="nextLink">
-              <span className="linkText">ABOUT US</span>
-              <ul>
-                <li className="linkItems">OUR STORY</li>
-                <li className="linkItems">CAREERS</li>
-              </ul>
-            </div>
-          </div>
+      <div id="linkSection">
+
+        <div className="column-left2">
+          <p></p>
         </div>
+        <div className="column-center2">
+          <span className="linkText">USEFUL LINKS</span>
+          <ul>
+            <li className="linkItems">CATELOG</li>
+            <li className="linkItems">GIFT CARDS</li>
+            <li className="linkItems">COUPONS &amp; PROMOS</li>
+            <li className="linkItems">REFER A FRIEND</li>
+          </ul>
+        </div>
+        <div className="column-right2">
+          <span className="linkText">SUPPORT</span>
+          <ul>
+            <li className="linkItems">OUR STORY</li>
+            <li className="linkItems">CAREERS</li>
+            <li className="linkItems">CONTACT US</li>
+            <li className="linkItems">CUSTOMER SERVICE</li>
+            <li className="linkItems">START A RETURN</li>
+          </ul>
+        </div>
+        <div className="column-space2">
+          <p></p>
+        </div>
+        <div className="column-end2">
+          <p className="linkText">STAY CONNECTED</p>
+          <ul className="connect">
+            <li className="linkItems"><i id="bigIcon" className="fa fa-facebook-f"></i><i id="bigIcon" className="fa fa-twitter"></i>
+            <i id="bigIcon" className="fa fa-instagram"></i><i id="bigIcon" className="fa fa-pinterest-p"></i></li>
+            <li className="linkItems"><i id="bigIcon" class="fa fa-envelope"></i><span id="emailText">Subcribe To Our Emails</span></li>
+          </ul>
+        </div>
+
+
+
       </div>
     )
   }
@@ -207,12 +273,26 @@ class FooterPage extends Component {
 class Log extends Component {
   render() {
     return (
-      <div className="topcorner">
-        <Link to={"/LoginPage"}><u>Login/Register</u></Link>
+      <Link className="link" to={"/LoginPage"}><div className="topcorner">
+        <i className="fa fa-user" id="userIcon"></i><p className="signIn">Sign in</p>
+        <p className="myAccount">My Account</p>
+      </div></Link>
+    )
+  }
+}
+
+class Banner extends Component {
+  render() {
+    return (
+      <div>
+        <p className="top-banner">Free Shipping with $75 purchase + Free Store Pickup.</p>
       </div>
     )
   }
 }
+
+
+
 
 
 

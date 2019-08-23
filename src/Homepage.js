@@ -37,6 +37,7 @@ class Homepage extends Component {
             <div>
                 <main>
                     <ThreeCol />
+                    <Banner2 />
                     <Header />
                     <Casual />
                     <Business />
@@ -51,9 +52,28 @@ class Homepage extends Component {
 
 export class Header extends Component {
     render() {
+        var settings = {
+            arrows: false,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            swipeToSlide: true,
+            centerMode: true,
+            centerPadding: "15px",
+            autoPlay: false,
+            adaptiveHeight: true,
+            responsive: [
+                {
+                    breakpoint: 768, settings: "unslick",
+                },
+            ],
+
+        };
         return (
             <div className="header">
-                <Carousel showArrows={true} showStatus={false} showIndicators={false} autoPlay={true} showThumbs={false}
+                {/* <Carousel showArrows={true} showStatus={false} showIndicators={false} autoPlay={true} showThumbs={false}
                     stopOnHover={false} useKeyboardArrows={true} infiniteLoop={true}>
                     <div>
                         <img className="carousel2" src={dress} alt="dress" />
@@ -64,9 +84,32 @@ export class Header extends Component {
                     <div>
                         <img className="carousel2" src={bw} alt="bw" />
                     </div>
-                </Carousel>
+                </Carousel> */}
+
+                <Slider {...settings}>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={jacket} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={bw} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={dress} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={jacket} alt="dress" />
+                    </div>
+                    <div>
+                        <img id="multi" className="carousel" src={bw} alt="dress" />
+                    </div>
+                </Slider>
 
             </div>
+
+
         )
     }
 }
@@ -277,6 +320,16 @@ export class Links extends Component {
                         </ul>
                     </div>
                 </div>
+            </div>
+        )
+    }
+}
+
+class Banner2 extends Component {
+    render() {
+        return (
+            <div>
+                <p className="mid-banner">GIVE A GIFT, GET A GIFT ------ RETURNS VARY BASED ON MEMBERSHIP</p>
             </div>
         )
     }
